@@ -7,7 +7,7 @@
     <title>Calculadora</title>
 </head>
 <body>
-    <form action="/calcular" method="post">
+    <form action="/calcular/{operador}" method="post">
         @csrf
         <input type="number" name="num1" placeholder="Número 1">
         <input type="text" name="operador" placeholder="Operador">
