@@ -15,7 +15,6 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/', [HomeController::class, 'calculadora']);
-//Route::post('/calculadora/{operador}', [HomeController::class, 'calculadora']);
 Route::post('/calcular/{operador}', [HomeController::class, 'calcular']);
 Route::post('/soma',[HomeController::class, 'soma']);
 Route::post('/sub',[HomeController::class, 'sub']);
