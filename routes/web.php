@@ -14,6 +14,7 @@ use App\Http\Controllers\HomeController;
 |
 */
 
+Route::get('/', [HomeController::class, 'calculadora']);
 Route::get('/calculadora', [HomeController::class, 'calculadora']);
 Route::post('/calcular', [HomeController::class, 'calcular']);
 Route::post('/soma',[HomeController::class, 'soma']);
